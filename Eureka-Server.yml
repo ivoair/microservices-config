@@ -1,15 +1,16 @@
----
-spring:
-  profiles: cloudpeers
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${vcap.services.${PREFIX:}othereureka.credentials.uri:http://${PREFIX:}othereureka.${application.domain:cfapps.io}}/eureka/
+server:
+  port: 6100
 
----
-spring:
-  profiles: docker
 eureka:
+  instance:
+    hostname: localhost
   client:
+    registerWithEureka: true
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      
+info:
+  name: Eureka Server
+  description: Eureka Server Application       
+  version: 1.0.0
