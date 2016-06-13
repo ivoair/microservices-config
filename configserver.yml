@@ -3,3 +3,6 @@ server:
 
 management:
   context-path: /admin
+  
+info:
+  version: 1.0.0
