@@ -1,0 +1,5 @@
+info:
+  name: Zipkin Server
+  description: Zipkin Server Application       
+  version: 1.0.1
+  
