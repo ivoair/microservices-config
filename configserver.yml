@@ -1,8 +1,5 @@
-server:
-  port: 6200
-
-management:
-  context-path: /admin
-  
 info:
-  version: 1.0.0
+  name: Spring Cloud Config Server
+  description: Spring Cloud Config Server Application       
+  version: 1.0.1
+  
