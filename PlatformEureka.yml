@@ -1,0 +1,4 @@
+info:
+  project: PlatformEureka
+  description: Servidor Eureka para la plataforma de despliegue
+  version: 1.0.0
