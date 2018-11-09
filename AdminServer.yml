@@ -1,0 +1,4 @@
+info:
+  name: AdminServer
+  description: Servidor Spring Boot Admin para monitorizar la plataforma y los microservicios desplegados
+  version: 1.0.0
